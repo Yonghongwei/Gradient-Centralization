@@ -13,13 +13,13 @@ The optimizers are provided in the files: SGD.py, Adam.py and Adagrad.py, includ
 
 ![](https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/projected_Grad.png)
 
+<div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/projected_Grad.png" height="50%" width="50%" alt=""/></div>
 
 ### Experiments
 #### Mini-ImageNet
 The codes is in `GC_code/Mini_ImageNet`.
 
-![](https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/miniIN_largeBN.png)
-
+<div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/miniIN_largeBN.png" height="50%" width="50%" alt=""/></div>
 
 #### CIFAR100
 The codes is in `GC_code/CIFAR100`.
@@ -27,14 +27,16 @@ The codes is in `GC_code/CIFAR100`.
 #### ImageNet
 The codes is in `GC_code/ImageNet`.
 
-![](https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/Imagnet_r50GN2.png)
+<div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/Imagnet_r50GN2.png" height="50%" width="50%" alt=""/></div>
+
+
 
 
 #### Fine-grained Classification
 The codes is in `GC_code/Fine-grained_classification`.
 
-![](https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/fine_grid2_c.png)
 
+<div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/fine_grid2_c.png" height="50%" width="50%" alt=""/></div>
 
 #### Objection Detection and Segmentation
 The codes is in `GC_code/MMdetection`.
