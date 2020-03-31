@@ -1,0 +1,400 @@
+
+Epoch: 0
+Training: Top1: 0.1473|Top5:0.3156
+Testing: Top1: 0.3019|Top5:0.5560
+
+Epoch: 1
+Training: Top1: 0.3285|Top5:0.5711
+Testing: Top1: 0.4271|Top5:0.6891
+
+Epoch: 2
+Training: Top1: 0.4010|Top5:0.6480
+Testing: Top1: 0.4762|Top5:0.7371
+
+Epoch: 3
+Training: Top1: 0.4376|Top5:0.6832
+Testing: Top1: 0.5024|Top5:0.7612
+
+Epoch: 4
+Training: Top1: 0.4609|Top5:0.7057
+Testing: Top1: 0.5283|Top5:0.7803
+
+Epoch: 5
+Training: Top1: 0.4770|Top5:0.7201
+Testing: Top1: 0.5359|Top5:0.7879
+
+Epoch: 6
+Training: Top1: 0.4889|Top5:0.7314
+Testing: Top1: 0.5494|Top5:0.7967
+
+Epoch: 7
+Training: Top1: 0.4982|Top5:0.7389
+Testing: Top1: 0.5550|Top5:0.8019
+
+Epoch: 8
+Training: Top1: 0.5054|Top5:0.7457
+Testing: Top1: 0.5598|Top5:0.8047
+
+Epoch: 9
+Training: Top1: 0.5113|Top5:0.7505
+Testing: Top1: 0.5707|Top5:0.8139
+
+Epoch: 10
+Training: Top1: 0.5155|Top5:0.7537
+Testing: Top1: 0.5734|Top5:0.8153
+
+Epoch: 11
+Training: Top1: 0.5194|Top5:0.7580
+Testing: Top1: 0.5740|Top5:0.8181
+
+Epoch: 12
+Training: Top1: 0.5230|Top5:0.7606
+Testing: Top1: 0.5779|Top5:0.8179
+
+Epoch: 13
+Training: Top1: 0.5258|Top5:0.7623
+Testing: Top1: 0.5743|Top5:0.8172
+
+Epoch: 14
+Training: Top1: 0.5283|Top5:0.7656
+Testing: Top1: 0.5912|Top5:0.8272
+
+Epoch: 15
+Training: Top1: 0.5309|Top5:0.7670
+Testing: Top1: 0.5809|Top5:0.8218
+
+Epoch: 16
+Training: Top1: 0.5328|Top5:0.7687
+Testing: Top1: 0.5840|Top5:0.8276
+
+Epoch: 17
+Training: Top1: 0.5342|Top5:0.7701
+Testing: Top1: 0.5854|Top5:0.8261
+
+Epoch: 18
+Training: Top1: 0.5360|Top5:0.7711
+Testing: Top1: 0.5876|Top5:0.8260
+
+Epoch: 19
+Training: Top1: 0.5372|Top5:0.7727
+Testing: Top1: 0.5914|Top5:0.8306
+
+Epoch: 20
+Training: Top1: 0.5388|Top5:0.7735
+Testing: Top1: 0.5961|Top5:0.8326
+
+Epoch: 21
+Training: Top1: 0.5396|Top5:0.7745
+Testing: Top1: 0.5898|Top5:0.8270
+
+Epoch: 22
+Training: Top1: 0.5408|Top5:0.7754
+Testing: Top1: 0.5845|Top5:0.8289
+
+Epoch: 23
+Training: Top1: 0.5419|Top5:0.7761
+Testing: Top1: 0.5965|Top5:0.8354
+
+Epoch: 24
+Training: Top1: 0.5428|Top5:0.7771
+Testing: Top1: 0.5871|Top5:0.8262
+
+Epoch: 25
+Training: Top1: 0.5430|Top5:0.7774
+Testing: Top1: 0.6001|Top5:0.8335
+
+Epoch: 26
+Training: Top1: 0.5441|Top5:0.7779
+Testing: Top1: 0.5928|Top5:0.8346
+
+Epoch: 27
+Training: Top1: 0.5452|Top5:0.7787
+Testing: Top1: 0.5984|Top5:0.8328
+
+Epoch: 28
+Training: Top1: 0.5455|Top5:0.7793
+Testing: Top1: 0.6034|Top5:0.8372
+
+Epoch: 29
+Training: Top1: 0.5465|Top5:0.7798
+Testing: Top1: 0.5930|Top5:0.8336
+
+Epoch: 30
+Training: Top1: 0.6528|Top5:0.8511
+Testing: Top1: 0.7165|Top5:0.9052
+
+Epoch: 31
+Training: Top1: 0.6780|Top5:0.8673
+Testing: Top1: 0.7265|Top5:0.9113
+
+Epoch: 32
+Training: Top1: 0.6874|Top5:0.8737
+Testing: Top1: 0.7291|Top5:0.9139
+
+Epoch: 33
+Training: Top1: 0.6932|Top5:0.8767
+Testing: Top1: 0.7317|Top5:0.9151
+
+Epoch: 34
+Training: Top1: 0.6969|Top5:0.8791
+Testing: Top1: 0.7329|Top5:0.9157
+
+Epoch: 35
+Training: Top1: 0.6997|Top5:0.8815
+Testing: Top1: 0.7355|Top5:0.9153
+
+Epoch: 36
+Training: Top1: 0.7012|Top5:0.8824
+Testing: Top1: 0.7346|Top5:0.9177
+
+Epoch: 37
+Training: Top1: 0.7033|Top5:0.8831
+Testing: Top1: 0.7354|Top5:0.9173
+
+Epoch: 38
+Training: Top1: 0.7035|Top5:0.8832
+Testing: Top1: 0.7354|Top5:0.9180
+
+Epoch: 39
+Training: Top1: 0.7038|Top5:0.8840
+Testing: Top1: 0.7321|Top5:0.9156
+
+Epoch: 40
+Training: Top1: 0.7043|Top5:0.8840
+Testing: Top1: 0.7331|Top5:0.9161
+
+Epoch: 41
+Training: Top1: 0.7040|Top5:0.8842
+Testing: Top1: 0.7310|Top5:0.9160
+
+Epoch: 42
+Training: Top1: 0.7038|Top5:0.8844
+Testing: Top1: 0.7341|Top5:0.9152
+
+Epoch: 43
+Training: Top1: 0.7037|Top5:0.8847
+Testing: Top1: 0.7325|Top5:0.9161
+
+Epoch: 44
+Training: Top1: 0.7041|Top5:0.8847
+Testing: Top1: 0.7317|Top5:0.9152
+
+Epoch: 45
+Training: Top1: 0.7051|Top5:0.8851
+Testing: Top1: 0.7334|Top5:0.9156
+
+Epoch: 46
+Training: Top1: 0.7046|Top5:0.8855
+Testing: Top1: 0.7325|Top5:0.9163
+
+Epoch: 47
+Training: Top1: 0.7048|Top5:0.8852
+Testing: Top1: 0.7302|Top5:0.9158
+
+Epoch: 48
+Training: Top1: 0.7047|Top5:0.8853
+Testing: Top1: 0.7320|Top5:0.9152
+
+Epoch: 49
+Training: Top1: 0.7055|Top5:0.8857
+Testing: Top1: 0.7327|Top5:0.9159
+
+Epoch: 50
+Training: Top1: 0.7061|Top5:0.8864
+Testing: Top1: 0.7332|Top5:0.9175
+
+Epoch: 51
+Training: Top1: 0.7064|Top5:0.8867
+Testing: Top1: 0.7349|Top5:0.9153
+
+Epoch: 52
+Training: Top1: 0.7071|Top5:0.8866
+Testing: Top1: 0.7328|Top5:0.9176
+
+Epoch: 53
+Training: Top1: 0.7079|Top5:0.8873
+Testing: Top1: 0.7312|Top5:0.9171
+
+Epoch: 54
+Training: Top1: 0.7081|Top5:0.8873
+Testing: Top1: 0.7327|Top5:0.9154
+
+Epoch: 55
+Training: Top1: 0.7091|Top5:0.8877
+Testing: Top1: 0.7304|Top5:0.9162
+
+Epoch: 56
+Training: Top1: 0.7088|Top5:0.8877
+Testing: Top1: 0.7330|Top5:0.9167
+
+Epoch: 57
+Training: Top1: 0.7092|Top5:0.8879
+Testing: Top1: 0.7321|Top5:0.9158
+
+Epoch: 58
+Training: Top1: 0.7108|Top5:0.8888
+Testing: Top1: 0.7326|Top5:0.9169
+
+Epoch: 59
+Training: Top1: 0.7107|Top5:0.8890
+Testing: Top1: 0.7354|Top5:0.9172
+
+Epoch: 60
+Training: Top1: 0.7552|Top5:0.9113
+Testing: Top1: 0.7679|Top5:0.9333
+
+Epoch: 61
+Training: Top1: 0.7681|Top5:0.9178
+Testing: Top1: 0.7680|Top5:0.9343
+
+Epoch: 62
+Training: Top1: 0.7733|Top5:0.9202
+Testing: Top1: 0.7698|Top5:0.9357
+
+Epoch: 63
+Training: Top1: 0.7765|Top5:0.9215
+Testing: Top1: 0.7711|Top5:0.9358
+
+Epoch: 64
+Training: Top1: 0.7795|Top5:0.9230
+Testing: Top1: 0.7728|Top5:0.9359
+
+Epoch: 65
+Training: Top1: 0.7816|Top5:0.9244
+Testing: Top1: 0.7749|Top5:0.9364
+
+Epoch: 66
+Training: Top1: 0.7835|Top5:0.9250
+Testing: Top1: 0.7740|Top5:0.9363
+
+Epoch: 67
+Training: Top1: 0.7861|Top5:0.9262
+Testing: Top1: 0.7754|Top5:0.9371
+
+Epoch: 68
+Training: Top1: 0.7873|Top5:0.9266
+Testing: Top1: 0.7749|Top5:0.9369
+
+Epoch: 69
+Training: Top1: 0.7882|Top5:0.9274
+Testing: Top1: 0.7757|Top5:0.9369
+
+Epoch: 70
+Training: Top1: 0.7905|Top5:0.9280
+Testing: Top1: 0.7740|Top5:0.9374
+
+Epoch: 71
+Training: Top1: 0.7916|Top5:0.9285
+Testing: Top1: 0.7758|Top5:0.9371
+
+Epoch: 72
+Training: Top1: 0.7929|Top5:0.9291
+Testing: Top1: 0.7749|Top5:0.9370
+
+Epoch: 73
+Training: Top1: 0.7935|Top5:0.9294
+Testing: Top1: 0.7739|Top5:0.9368
+
+Epoch: 74
+Training: Top1: 0.7956|Top5:0.9303
+Testing: Top1: 0.7755|Top5:0.9368
+
+Epoch: 75
+Training: Top1: 0.7965|Top5:0.9306
+Testing: Top1: 0.7750|Top5:0.9379
+
+Epoch: 76
+Training: Top1: 0.7975|Top5:0.9314
+Testing: Top1: 0.7755|Top5:0.9378
+
+Epoch: 77
+Training: Top1: 0.7987|Top5:0.9316
+Testing: Top1: 0.7748|Top5:0.9378
+
+Epoch: 78
+Training: Top1: 0.7999|Top5:0.9320
+Testing: Top1: 0.7759|Top5:0.9378
+
+Epoch: 79
+Training: Top1: 0.8008|Top5:0.9325
+Testing: Top1: 0.7749|Top5:0.9375
+
+Epoch: 80
+Training: Top1: 0.8011|Top5:0.9326
+Testing: Top1: 0.7737|Top5:0.9364
+
+Epoch: 81
+Training: Top1: 0.8021|Top5:0.9327
+Testing: Top1: 0.7750|Top5:0.9383
+
+Epoch: 82
+Training: Top1: 0.8033|Top5:0.9335
+Testing: Top1: 0.7755|Top5:0.9372
+
+Epoch: 83
+Training: Top1: 0.8040|Top5:0.9333
+Testing: Top1: 0.7751|Top5:0.9367
+
+Epoch: 84
+Training: Top1: 0.8052|Top5:0.9343
+Testing: Top1: 0.7748|Top5:0.9368
+
+Epoch: 85
+Training: Top1: 0.8060|Top5:0.9345
+Testing: Top1: 0.7766|Top5:0.9376
+
+Epoch: 86
+Training: Top1: 0.8067|Top5:0.9350
+Testing: Top1: 0.7756|Top5:0.9374
+
+Epoch: 87
+Training: Top1: 0.8074|Top5:0.9349
+Testing: Top1: 0.7756|Top5:0.9383
+
+Epoch: 88
+Training: Top1: 0.8076|Top5:0.9355
+Testing: Top1: 0.7765|Top5:0.9376
+
+Epoch: 89
+Training: Top1: 0.8082|Top5:0.9357
+Testing: Top1: 0.7747|Top5:0.9370
+
+Epoch: 90
+Training: Top1: 0.8170|Top5:0.9388
+Testing: Top1: 0.7790|Top5:0.9387
+
+Epoch: 91
+Training: Top1: 0.8190|Top5:0.9394
+Testing: Top1: 0.7786|Top5:0.9393
+
+Epoch: 92
+Training: Top1: 0.8203|Top5:0.9400
+Testing: Top1: 0.7786|Top5:0.9396
+
+Epoch: 93
+Training: Top1: 0.8209|Top5:0.9403
+Testing: Top1: 0.7791|Top5:0.9391
+
+Epoch: 94
+Training: Top1: 0.8218|Top5:0.9404
+Testing: Top1: 0.7793|Top5:0.9397
+
+Epoch: 95
+Training: Top1: 0.8224|Top5:0.9407
+Testing: Top1: 0.7791|Top5:0.9392
+
+Epoch: 96
+Training: Top1: 0.8230|Top5:0.9411
+Testing: Top1: 0.7792|Top5:0.9390
+
+Epoch: 97
+Training: Top1: 0.8229|Top5:0.9411
+Testing: Top1: 0.7800|Top5:0.9399
+
+Epoch: 98
+Training: Top1: 0.8232|Top5:0.9409
+Testing: Top1: 0.7794|Top5:0.9397
+
+Epoch: 99
+Training: Top1: 0.8236|Top5:0.9413
+Testing: Top1: 0.7795|Top5:0.9393
