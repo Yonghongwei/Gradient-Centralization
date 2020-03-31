@@ -10,6 +10,9 @@ The optimizers are provided in the files: SGD.py, Adam.py and Adagrad.py, includ
 #### Mini-ImageNet
 The codes is in `GC_code/Mini_ImageNet`.
 
+![](https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/miniIN_largeBN.png)
+
+
 #### CIFAR100
 The codes is in `GC_code/CIFAR100`.
 
