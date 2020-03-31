@@ -11,15 +11,13 @@ The optimizers are provided in the files: SGD.py, Adam.py and Adagrad.py, includ
         from SGD import SGD_GC  
 
 
-![](https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/projected_Grad.png)
-
-<div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/projected_Grad.png" height="50%" width="50%" alt=""/></div>
+<div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/projected_Grad.png" height="60%" width="60%" alt=""/></div>
 
 ### Experiments
 #### Mini-ImageNet
 The codes is in `GC_code/Mini_ImageNet`.
 
-<div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/miniIN_largeBN.png" height="50%" width="50%" alt=""/></div>
+<div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/miniIN_largeBN.png" height="70%" width="70%" alt=""/></div>
 
 #### CIFAR100
 The codes is in `GC_code/CIFAR100`.
@@ -27,7 +25,7 @@ The codes is in `GC_code/CIFAR100`.
 #### ImageNet
 The codes is in `GC_code/ImageNet`.
 
-<div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/Imagnet_r50GN2.png" height="50%" width="50%" alt=""/></div>
+<div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/Imagnet_r50GN2.png" height="100%" width="100%" alt=""/></div>
 
 
 
