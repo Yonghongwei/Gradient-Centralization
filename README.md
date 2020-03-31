@@ -2,7 +2,7 @@
 
 ## Gradient-Centralization: A New Optimization Technique for Deep Neural Networks
 
-![](<img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/gradient.png" width="150" height="200" alt="Gradient"/>)
+![]<img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/gradient.png" width="150" height="200" alt="Gradient"/>
 
 
 
