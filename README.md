@@ -6,16 +6,24 @@ The optimizers are provided in the files: SGD.py, Adam.py and Adagrad.py, includ
 
         from SGD import SGD_GC  
 
-### CIFAR100
 
-### Mini-ImageNet
+#### Mini-ImageNet
+The codes is in `GC_code/Mini_ImageNet`.
 
-### ImageNet
+#### CIFAR100
+The codes is in `GC_code/CIFAR100`.
 
-### Fine-grained Classification
+#### ImageNet
+The codes is in `GC_code/ImageNet`.
 
-### Objection Detection and Segmentation
 
+#### Fine-grained Classification
+The codes is in `GC_code/Fine-grained_classification`.
+
+
+
+#### Objection Detection and Segmentation
+The codes is in `GC_code/MMdetection`.
 
 
 
