@@ -25,7 +25,7 @@ The codes is in `GC_code/CIFAR100`.
 #### ImageNet
 The codes is in `GC_code/ImageNet`.
 
-<div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/Imagnet_r50GN2.png" height="100%" width="100%" alt=""/></div>
+<div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/Imagnet_r50GN2.png" height="70%" width="70%" alt=""/></div>
 
 
 
@@ -34,7 +34,7 @@ The codes is in `GC_code/ImageNet`.
 The codes is in `GC_code/Fine-grained_classification`.
 
 
-<div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/fine_grid2_c.png" height="50%" width="50%" alt=""/></div>
+<div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/fine_grid2_c.png" height="100%" width="100%" alt=""/></div>
 
 #### Objection Detection and Segmentation
 The codes is in `GC_code/MMdetection`.
