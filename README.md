@@ -2,9 +2,8 @@
 
 ## Gradient-Centralization: A New Optimization Technique for Deep Neural Networks
 
-<div align=center><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/gradient.png" width="450" height="300" alt="Gradient"/>
 
-
+<img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/gradient.png" style="zoom:50%" align=center />
 
 The optimizers are provided in the files: SGD.py, Adam.py and Adagrad.py, including SGD_GC, SGD_GCC, SGDW_GCC, Adam_GC, Adam_GCC, AdamW_GCC and Adagrad_GCC. The optimizers with "_GC" use GC for both Conv layers and FC layers, and the optimizers with "_GCC" use GC only for Conv layers. We can use the following codes to import SGD_GC:
 
