@@ -13,6 +13,12 @@ The optimizers are provided in the files: [`SGD.py`](https://github.com/Yonghong
 
 <div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/projected_Grad.png" height="60%" width="60%" alt=""/></div>
 
+## Update
+* 2020/04/07:Release a pytorch implementation of optimizers with GC, and provide some examples on classification task, including Mini-ImageNet,  CIFAR100, ImageNet and Fine-grained Classification.
+
+
+
+
 ## Experiments
 ### Mini-ImageNet
 The codes is in [`GC_code/Mini_ImageNet`](https://github.com/Yonghongwei/Gradient-Centralization/tree/master/GC_code/Mini_ImageNet). The split dataset can be downloaded from [here](https://drive.google.com/open?id=1XWRjPzwRWChNgvemqsylYM1ocpxhGtfy).
