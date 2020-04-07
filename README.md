@@ -15,15 +15,15 @@ The optimizers are provided in the files: SGD.py, Adam.py and Adagrad.py, includ
 
 ### Experiments
 #### Mini-ImageNet
-The codes is in `GC_code/Mini_ImageNet`. The split dataset can be downloaded from [here](https://drive.google.com/open?id=1XWRjPzwRWChNgvemqsylYM1ocpxhGtfy).
+The codes is in [`GC_code/Mini_ImageNet`](https://github.com/Yonghongwei/Gradient-Centralization/tree/master/GC_code/Mini_ImageNet). The split dataset can be downloaded from [here](https://drive.google.com/open?id=1XWRjPzwRWChNgvemqsylYM1ocpxhGtfy).
 
 <div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/miniIN_largeBN.png" height="70%" width="70%" alt=""/></div>
 
 #### CIFAR100
-The codes is in `GC_code/CIFAR100`.
+The codes is in [`GC_code/CIFAR100`](https://github.com/Yonghongwei/Gradient-Centralization/tree/master/GC_code/CIFAR100).
 
 #### ImageNet
-The codes is in `GC_code/ImageNet`.
+The codes is in [`GC_code/ImageNet`](https://github.com/Yonghongwei/Gradient-Centralization/tree/master/GC_code/ImageNet).
 
 <div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/Imagnet_r50GN2.png" height="70%" width="70%" alt=""/></div>
 
@@ -31,7 +31,7 @@ The codes is in `GC_code/ImageNet`.
 
 
 #### Fine-grained Classification
-The codes is in `GC_code/Fine-grained_classification`.  The preprocessed dataset can be downloaded from [here](https://drive.google.com/open?id=1c3OnKq3EsMKK1OerWdouCG7hvN8Rv8yh).
+The codes is in [`GC_code/Fine-grained_classification`](https://github.com/Yonghongwei/Gradient-Centralization/tree/master/GC_code/Fine-grained_classification).  The preprocessed dataset can be downloaded from [here](https://drive.google.com/open?id=1c3OnKq3EsMKK1OerWdouCG7hvN8Rv8yh).
 
 
 <div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/fine_grid2_c.png" height="100%" width="100%" alt=""/></div>
