@@ -1,6 +1,6 @@
 # Gradient-Centralization
 
-## Gradient-Centralization: A New Optimization Technique for Deep Neural Networks
+## [Gradient-Centralization: A New Optimization Technique for Deep Neural Networks](https://arxiv.org/abs/2004.01461)
 
 
 <div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/gradient.png" height="50%" width="50%" alt="Illustration of the GC operation on gradient matrix/tensor of weights in the fully-connected layer (left) and convolutional layer (right)."/></div>
@@ -15,7 +15,7 @@ The optimizers are provided in the files: SGD.py, Adam.py and Adagrad.py, includ
 
 ### Experiments
 #### Mini-ImageNet
-The codes is in `GC_code/Mini_ImageNet`. The splitted dataset can be downloaded from [here](https://drive.google.com/open?id=1XWRjPzwRWChNgvemqsylYM1ocpxhGtfy)
+The codes is in `GC_code/Mini_ImageNet`. The split dataset can be downloaded from [here](https://drive.google.com/open?id=1XWRjPzwRWChNgvemqsylYM1ocpxhGtfy).
 
 <div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/miniIN_largeBN.png" height="70%" width="70%" alt=""/></div>
 
@@ -31,7 +31,7 @@ The codes is in `GC_code/ImageNet`.
 
 
 #### Fine-grained Classification
-The codes is in `GC_code/Fine-grained_classification`.
+The codes is in `GC_code/Fine-grained_classification`.  The preprocessed dataset can be downloaded from [here]()
 
 
 <div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/fine_grid2_c.png" height="100%" width="100%" alt=""/></div>
