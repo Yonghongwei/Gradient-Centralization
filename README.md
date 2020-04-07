@@ -26,7 +26,7 @@ from SGD import SGD_GC
     }
 
 ## Experiments
-### General image classification
+### General Image Classification
 #### Mini-ImageNet
 The codes is in [`GC_code/Mini_ImageNet`](https://github.com/Yonghongwei/Gradient-Centralization/tree/master/GC_code/Mini_ImageNet). The split dataset can be downloaded from [here](https://drive.google.com/open?id=1XWRjPzwRWChNgvemqsylYM1ocpxhGtfy).
 
@@ -41,7 +41,7 @@ The codes is in [`GC_code/ImageNet`](https://github.com/Yonghongwei/Gradient-Cen
 <div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/Imagnet_r50GN2.png" height="50%" width="50%" alt=""/></div>
 
 
-### Fine-grained Classification
+### Fine-grained Image Classification
 The codes is in [`GC_code/Fine-grained_classification`](https://github.com/Yonghongwei/Gradient-Centralization/tree/master/GC_code/Fine-grained_classification).  The preprocessed dataset can be downloaded from [here](https://drive.google.com/open?id=1c3OnKq3EsMKK1OerWdouCG7hvN8Rv8yh).
 
 
