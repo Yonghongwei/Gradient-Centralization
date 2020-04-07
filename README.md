@@ -12,7 +12,7 @@ GC can be viewed as a projected gradient descent method with a constrained loss 
 The optimizers are provided in the files: [`SGD.py`](https://github.com/Yonghongwei/Gradient-Centralization/blob/master/GC_code/CIFAR100/algorithm/SGD.py), [`Adam.py`](https://github.com/Yonghongwei/Gradient-Centralization/blob/master/GC_code/CIFAR100/algorithm/Adam.py) and [`Adagrad.py`](https://github.com/Yonghongwei/Gradient-Centralization/blob/master/GC_code/CIFAR100/algorithm/Adagrad.py), including SGD_GC, SGD_GCC, SGDW_GCC, Adam_GC, Adam_GCC, AdamW_GCC and Adagrad_GCC. The optimizers with "_GC" use GC for both Conv layers and FC layers, and the optimizers with "_GCC" use GC only for Conv layers. We can use the following codes to import SGD_GC:
 ```python
 from SGD import SGD_GC 
-
+```
 
 ## Update
 * 2020/04/07:Release a pytorch implementation of optimizers with GC, and provide some examples on classification task, including Mini-ImageNet,  CIFAR100, ImageNet and Fine-grained Classification.
