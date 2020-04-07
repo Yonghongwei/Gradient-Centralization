@@ -15,7 +15,7 @@ The optimizers are provided in the files: SGD.py, Adam.py and Adagrad.py, includ
 
 ### Experiments
 #### Mini-ImageNet
-The codes is in `GC_code/Mini_ImageNet`.
+The codes is in `GC_code/Mini_ImageNet`. The splitted dataset can be downloaded from https://drive.google.com/open?id=1XWRjPzwRWChNgvemqsylYM1ocpxhGtfy
 
 <div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/miniIN_largeBN.png" height="70%" width="70%" alt=""/></div>
 
