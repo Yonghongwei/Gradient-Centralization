@@ -30,7 +30,7 @@ from SGD import SGD_GC
 #### Mini-ImageNet
 The codes is in [`GC_code/Mini_ImageNet`](https://github.com/Yonghongwei/Gradient-Centralization/tree/master/GC_code/Mini_ImageNet). The split dataset can be downloaded from [here](https://drive.google.com/open?id=1XWRjPzwRWChNgvemqsylYM1ocpxhGtfy).
 
-<div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/miniIN_largeBN.png" height="50%" width="50%" alt=""/></div>
+<div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/miniIN_largeBN.png" height="65%" width="65%" alt=""/></div>
 
 #### CIFAR100
 The codes is in [`GC_code/CIFAR100`](https://github.com/Yonghongwei/Gradient-Centralization/tree/master/GC_code/CIFAR100).
@@ -38,7 +38,7 @@ The codes is in [`GC_code/CIFAR100`](https://github.com/Yonghongwei/Gradient-Cen
 #### ImageNet
 The codes is in [`GC_code/ImageNet`](https://github.com/Yonghongwei/Gradient-Centralization/tree/master/GC_code/ImageNet).
 
-<div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/Imagnet_r50GN2.png" height="50%" width="50%" alt=""/></div>
+<div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/Imagnet_r50GN2.png" height="65%" width="65%" alt=""/></div>
 
 
 ### Fine-grained Image Classification
