@@ -18,13 +18,12 @@ from SGD import SGD_GC
 * 2020/04/07:Release a pytorch implementation of optimizers with GC, and provide some examples on classification task, including Mini-ImageNet,  CIFAR100, ImageNet and Fine-grained Classification.
 
 ## Citation
-
-@article{GradientCentra,
-  title={Gradient-Centralization: A New Optimization Technique for Deep Neural Networks},
-  author={Hongwei Yong and Jianqiang Huang and Xiansheng Hua and Lei Zhang},
-  journal={Arxiv},
-  year={2020}
-}
+    @article{GradientCentra,
+      title={Gradient-Centralization: A New Optimization Technique for Deep Neural Networks},
+      author={Hongwei Yong and Jianqiang Huang and Xiansheng Hua and Lei Zhang},
+      journal={Arxiv},
+      year={2020}
+    }
 
 ## Experiments
 ### Mini-ImageNet
