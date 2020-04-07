@@ -15,7 +15,8 @@ from SGD import SGD_GC
 ```
 
 ## Update
-* 2020/04/07:Release a pytorch implementation of optimizers with GC, and provide some examples on classification task, including Mini-ImageNet,  CIFAR100, ImageNet and Fine-grained Classification.
+* 2020/04/07:Release a pytorch implementation of optimizers with GC, and provide some examples on classification task, including
+general image classification (Mini-ImageNet,  CIFAR100 and ImageNet) and Fine-grained image classification (FGVC Aircraft， Stanford Cars， Stanford  Dogs and CUB-200-2011).
 
 ## Citation
     @article{GradientCentra,
