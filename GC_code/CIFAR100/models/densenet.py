@@ -83,20 +83,20 @@ class DenseNet(nn.Module):
         out = self.linear(out)
         return out
 
-def DenseNet121():
-    return DenseNet(Bottleneck, [6,12,24,16], growth_rate=32)
+def DenseNet121(Num_classes=10):
+    return DenseNet(Bottleneck, [6,12,24,16], growth_rate=32, num_classes=Num_classes)
 
-def DenseNet169():
-    return DenseNet(Bottleneck, [6,12,32,32], growth_rate=32)
+def DenseNet169(Num_classes=10):
+    return DenseNet(Bottleneck, [6,12,32,32], growth_rate=32, num_classes=Num_classes)
 
-def DenseNet201():
-    return DenseNet(Bottleneck, [6,12,48,32], growth_rate=32)
+def DenseNet201(Num_classes=10):
+    return DenseNet(Bottleneck, [6,12,48,32], growth_rate=32, num_classes=Num_classes)
 
-def DenseNet161():
-    return DenseNet(Bottleneck, [6,12,36,24], growth_rate=48)
+def DenseNet161(Num_classes=10):
+    return DenseNet(Bottleneck, [6,12,36,24], growth_rate=48, num_classes=Num_classes)
 
-def densenet_cifar():
-    return DenseNet(Bottleneck, [6,12,24,16], growth_rate=12)
+def densenet_cifar(Num_classes=10):
+    return DenseNet(Bottleneck, [6,12,24,16], growth_rate=12, num_classes=Num_classes)
 
 def test():
     net = densenet_cifar()
