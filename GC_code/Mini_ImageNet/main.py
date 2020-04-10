@@ -192,9 +192,8 @@ def main_worker(gpu, ngpus_per_node, args):
         else:
             model = torch.nn.DataParallel(model).cuda()
 
-    # define loss function (criterion) and optimizer
+    # define loss function (criterion) 
     criterion = nn.CrossEntropyLoss().cuda(args.gpu)
-
 
 
     # choose optimizer
