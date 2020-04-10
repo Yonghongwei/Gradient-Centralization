@@ -132,7 +132,7 @@ if args.alg=='sgdWGC':
 if args.alg=='adamW':
     optimizer = AdamW(net.parameters(), lr=args.lr*0.01, weight_decay = WD)
 if args.alg=='adamWGC':
-    optimizer = Adam_GCC(net.parameters(), lr=args.lr*0.01, weight_decay = WD)
+    optimizer = AdamW_GCC(net.parameters(), lr=args.lr*0.01, weight_decay = WD)
 
 exp_lr_scheduler = lr_scheduler.StepLR(optimizer, step_size=60, gamma=0.1)
 
