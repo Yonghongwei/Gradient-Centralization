@@ -74,8 +74,10 @@ class Adagrad_GCC(Optimizer):
                     if p.grad.data.is_sparse:
                         raise RuntimeError("weight_decay option is not compatible with sparse gradients")
                     grad = grad.add(group['weight_decay'], p.data)
-                if len(list(grad.data.size()))==4:
-                   grad.add_(-grad.mean(dim = 1, keepdim = True).mean(dim = 2, keepdim = True).mean(dim = 3, keepdim = True))
+                    
+                 #GC operation for Conv layers                  
+                if len(list(grad.size()))>4:
+                    grad.add_(-grad.mean(dim = tuple(range(1,len(list(grad.size())))), keepdim = True))
 
                 clr = group['lr'] / (1 + (state['step'] - 1) * group['lr_decay'])
 
