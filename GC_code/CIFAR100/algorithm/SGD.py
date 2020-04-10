@@ -52,7 +52,7 @@ class SGD_GCC(Optimizer):
 
                 #GC operation for Conv layers
                 if len(list(d_p.size()))>3:
-                   d_p.add_(-d_p.mean(dim = (1,2,3), keepdim = True))
+                   d_p.add_(-d_p.mean(dim = tuple(range(1,len(list(d_p.size())))), keepdim = True))
                    
                 if momentum != 0:
                     param_state = self.state[p]
@@ -254,7 +254,7 @@ class SGDW_GCC(Optimizer):
                 
                 #GC operation for Conv layers
                 if len(list(d_p.size()))>3:
-                   d_p.add_(-d_p.mean(dim = (1,2,3), keepdim = True))
+                   d_p.add_(-d_p.mean(dim = tuple(range(1,len(list(d_p.size())))), keepdim = True))
 
 
                 if momentum != 0:
