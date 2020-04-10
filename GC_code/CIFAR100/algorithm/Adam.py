@@ -69,7 +69,7 @@ class Adam_GCC(Optimizer):
 
                 #GC operation for Conv layers
                 if len(list(grad.size()))>3:                    
-                    grad.add_(-grad.mean(dim = (1,2,3), keepdim = True))
+                    grad.add_(-grad.mean(dim = tuple(range(1,len(list(grad.size())))), keepdim = True))
                     
                 # Decay the first and second moment running average coefficient
                 exp_avg.mul_(beta1).add_(1 - beta1, grad)
@@ -381,7 +381,7 @@ class AdamW_GCC(Optimizer):
 
                 #GC operation for Conv layers
                 if len(list(grad.size()))>3:                    
-                    grad.add_(-grad.mean(dim = (1,2,3), keepdim = True))
+                   grad.add_(-grad.mean(dim = tuple(range(1,len(list(grad.size())))), keepdim = True))
 
                 state['step'] += 1
 
