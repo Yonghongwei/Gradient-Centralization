@@ -68,9 +68,9 @@ class Adam_GCC(Optimizer):
                     grad.add_(group['weight_decay'], p.data)
 
                 #GC operation for Conv layers
-                if len(list(p.data.size()))==4:
-                    grad.add_(-grad.mean(dim = 1, keepdim = True).mean(dim = 2, keepdim = True).mean(dim = 3, keepdim = True))
-
+                if len(list(p.data.size()))==4:                    
+                    grad.add_(-grad.mean(dim = (1,2,3), keepdim = True))
+                    
                 # Decay the first and second moment running average coefficient
                 exp_avg.mul_(beta1).add_(1 - beta1, grad)
                 exp_avg_sq.mul_(beta2).addcmul_(1 - beta2, grad, grad)
@@ -184,8 +184,10 @@ class Adam_GC(Optimizer):
                     for i in range(length-1):
                       m_grad=m_grad.mean(i+1,keepdim=True)
                     grad.add_(-m_grad)
-
-
+                    
+                #GC operation for Conv layers and FC layers   
+                if len(list(grad.size()))>1:
+                   grad.add_(-grad.mean(dim = tuple(range(1,len(list(grad.size())))), keepdim = True))
 
                 # Decay the first and second moment running average coefficient
                 exp_avg.mul_(beta1).add_(1 - beta1, grad)
@@ -385,8 +387,9 @@ class AdamW_GCC(Optimizer):
                     max_exp_avg_sq = state['max_exp_avg_sq']
                 beta1, beta2 = group['betas']
 
-                if len(list(p.data.size()))==4:
-                    grad.add_(-grad.mean(dim = 1, keepdim = True).mean(dim = 2, keepdim = True).mean(dim = 3, keepdim = True))
+                #GC operation for Conv layers
+                if len(list(grad.size()))==4:                    
+                    grad.add_(-grad.mean(dim = (1,2,3), keepdim = True))
 
                 state['step'] += 1
 
