@@ -51,9 +51,9 @@ class SGD_GCC(Optimizer):
                     d_p.add_(weight_decay, p.data)
 
                 #GC operation for Conv layers
-                if len(list(d_p.data.size()))==4:
-                   d_p.add_(-d_p.mean(dim = 1, keepdim = True).mean(dim = 2, keepdim = True).mean(dim = 3, keepdim = True))
-
+                if len(list(d_p.size()))>3:
+                   d_p.add_(-d_p.mean(dim = tuple(range(1,len(list(d_p.size())))), keepdim = True))
+                   
                 if momentum != 0:
                     param_state = self.state[p]
                     if 'momentum_buffer' not in param_state:
@@ -118,12 +118,8 @@ class SGD_GC(Optimizer):
                     d_p.add_(weight_decay, p.data)
 
                 #GC operation for Conv layers and FC layers
-                length=len(list(p.data.size()))
-                if length>1:
-                    m_grad=d_p
-                    for i in range(length-1):
-                      m_grad=m_grad.mean(i+1,keepdim=True)
-                    d_p.add_(-m_grad)
+                if len(list(d_p.size()))>1:
+                   d_p.add_(-d_p.mean(dim = tuple(range(1,len(list(d_p.size())))), keepdim = True))
 
                 if momentum != 0:
                     param_state = self.state[p]
@@ -255,9 +251,10 @@ class SGDW_GCC(Optimizer):
                 old = torch.clone(p.data).detach()
                 #if weight_decay != 0:
                 #    d_p.add_(weight_decay, p.data)
-
-                if len(list(d_p.data.size()))==4:
-                   d_p.add_(-d_p.mean(dim = 1, keepdim = True).mean(dim = 2, keepdim = True).mean(dim = 3, keepdim = True))
+                
+                #GC operation for Conv layers
+                if len(list(d_p.size()))>3:
+                   d_p.add_(-d_p.mean(dim = tuple(range(1,len(list(d_p.size())))), keepdim = True))
 
 
                 if momentum != 0:
