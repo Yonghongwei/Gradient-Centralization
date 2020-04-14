@@ -4,15 +4,15 @@
 
 ***
 
-Gradient Centralization (GC) is a simple and effective optimization technique for Deep Neural Networks (DNNs), which operates directly on gradients by centralizing the gradient vectors to have zero mean. It can both speedup training process and improve the final generalization performance of DNNs. GC is very simple to implement and can be easily embedded into existing gradient based DNN optimizers with only few lines of code. It can also be directly used to finetune the pre-trained DNNs.
+&ensp;&ensp;&ensp;&ensp; Gradient Centralization (GC) is a simple and effective optimization technique for Deep Neural Networks (DNNs), which operates directly on gradients by centralizing the gradient vectors to have zero mean. It can both speedup training process and improve the final generalization performance of DNNs. GC is very simple to implement and can be easily embedded into existing gradient based DNN optimizers with only few lines of code. It can also be directly used to finetune the pre-trained DNNs.
 
 <div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/gradient.png" height="50%" width="50%" alt="Illustration of the GC operation on gradient matrix/tensor of weights in the fully-connected layer (left) and convolutional layer (right)."/></div>
 
-GC can be viewed as a projected gradient descent method with a constrained loss function.  The Lipschitzness of the constrained loss function and its gradient is better so that the training process becomes more efficient and stable.   Our experiments on various applications, including `general image classification`, `fine-grained image classification`, `detection and segmentation` and `Person ReID` demonstrate that GC can consistently improve the performance of DNN learning. 
+&ensp;&ensp;&ensp;&ensp; GC can be viewed as a projected gradient descent method with a constrained loss function.  The Lipschitzness of the constrained loss function and its gradient is better so that the training process becomes more efficient and stable.   Our experiments on various applications, including `general image classification`, `fine-grained image classification`, `detection and segmentation` and `Person ReID` demonstrate that GC can consistently improve the performance of DNN learning. 
 
 <div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/projected_Grad.png" height="60%" width="60%" alt=""/></div>
 
-The optimizers are provided in the files: [`SGD.py`](https://github.com/Yonghongwei/Gradient-Centralization/blob/master/GC_code/CIFAR100/algorithm/SGD.py), [`Adam.py`](https://github.com/Yonghongwei/Gradient-Centralization/blob/master/GC_code/CIFAR100/algorithm/Adam.py) and [`Adagrad.py`](https://github.com/Yonghongwei/Gradient-Centralization/blob/master/GC_code/CIFAR100/algorithm/Adagrad.py), including SGD_GC, SGD_GCC, SGDW_GCC, Adam_GC, Adam_GCC, AdamW_GCC and Adagrad_GCC. The optimizers with "_GC" use GC for both Conv layers and FC layers, and the optimizers with "_GCC" use GC only for Conv layers. We can use the following codes to import SGD_GC:
+&ensp;&ensp;&ensp;&ensp; The optimizers are provided in the files: [`SGD.py`](https://github.com/Yonghongwei/Gradient-Centralization/blob/master/GC_code/CIFAR100/algorithm/SGD.py), [`Adam.py`](https://github.com/Yonghongwei/Gradient-Centralization/blob/master/GC_code/CIFAR100/algorithm/Adam.py) and [`Adagrad.py`](https://github.com/Yonghongwei/Gradient-Centralization/blob/master/GC_code/CIFAR100/algorithm/Adagrad.py), including SGD_GC, SGD_GCC, SGDW_GCC, Adam_GC, Adam_GCC, AdamW_GCC and Adagrad_GCC. The optimizers with "_GC" use GC for both Conv layers and FC layers, and the optimizers with "_GCC" use GC only for Conv layers. We can use the following codes to import SGD_GC:
 ```python
 from SGD import SGD_GC 
 ```
@@ -23,7 +23,7 @@ from SGD import SGD_GC
 * 2020/04/07:Release a pytorch implementation of optimizers with GC, and provide some examples on classification task, including
 general image classification (Mini-ImageNet,  CIFAR100 and ImageNet) and Fine-grained image classification (FGVC Aircraft， Stanford Cars， Stanford  Dogs and CUB-200-2011).
 
-* 2020/04/07:Release the code of GC on MMdetection and update some tables of experimental results.
+* 2020/04/14:Release the code of GC on MMdetection and update some tables of experimental results.
 
 ***
 
@@ -38,6 +38,8 @@ general image classification (Mini-ImageNet,  CIFAR100 and ImageNet) and Fine-gr
 ***
 
 ## Experiments
+***
+
 ### General Image Classification
 * Mini-ImageNet
 
