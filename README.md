@@ -49,7 +49,7 @@ The codes are in [`GC_code/Fine-grained_classification`](https://github.com/Yong
 <div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/fine_grid2_c.png" height="100%" width="100%" alt=""/></div>
 
 ### Objection Detection and Segmentation
-The codes are in [`MMdetection`](https://github.com/Yonghongwei/mmdetection). Please let [`SGD.py`](https://github.com/Yonghongwei/mmdetection/blob/master/tools/SGD.py) in [`MMdetection\tools\`](https://github.com/Yonghongwei/mmdetection/tree/master/tools), and update [`MMdetection\tools\train.py`](https://github.com/Yonghongwei/mmdetection/blob/master/tools/train.py). Then if you want use SGD_GC optimizer, just update optimizer in the [`configs`](https://github.com/Yonghongwei/mmdetection/blob/master/configs/) file. For example, if we want use SGD_GC to optimize Faster_RCNN with ResNet50 backbone and FPN, we update the 151th line in [`MMdetection/configs/faster_rcnn_r50_fpn_1x.py`](https://github.com/Yonghongwei/mmdetection/blob/master/configs/faster_rcnn_r50_fpn_1x.py).
+The codes are in [`MMdetection`](https://github.com/Yonghongwei/mmdetection). Please let [`SGD.py`](https://github.com/Yonghongwei/mmdetection/blob/master/tools/SGD.py) in [`MMdetection\tools\`](https://github.com/Yonghongwei/mmdetection/tree/master/tools), and update [`MMdetection\tools\train.py`](https://github.com/Yonghongwei/mmdetection/blob/master/tools/train.py). Then if you want use SGD_GC optimizer, just update optimizer in the [`configs`](https://github.com/Yonghongwei/mmdetection/blob/master/configs/) file. For example, if we want use SGD_GC to optimize Faster_RCNN with ResNet50 backbone and FPN, we update the 151th line in [`MMdetection/configs/faster_rcnn_r50_fpn_1x.py`](https://github.com/Yonghongwei/mmdetection/blob/master/configs/faster_rcnn_r50_fpn_1x.py). The following table is the detection results on COCO by using Faster-RCNN and FPN with various backbone models:
 
 | Method        | Backbone      |  AP   | AP(.5) |  AP(.75) | Backbone      |  AP   | AP(.5) |  AP(.75) |
 | :-----------: | :-----------: | :----:|:------:|:-------: | :-----------: | :----:|:------:|:-------: |
@@ -57,6 +57,24 @@ The codes are in [`MMdetection`](https://github.com/Yonghongwei/mmdetection). Pl
 | w/ GC         | R50           |  37.0 |  59.0  |  40.2    | X101-32x4d    |  40.7 |  62.7  |   43.9   |
 | w/o GC        | R101          |  38.5 |  60.3  |  41.6    | X101-64x4d    |  41.3 |  63.3  |   45.2   |
 | w/ GC         | R101          |  38.9 |  60.8  |  42.2    | X101-64x4d    |  41.6 |  63.8  |   45.4   |
+The following table is the detection and segmentation results on COCO by using Mask-RCNN and FPN with various backbone models:
+
+| Method        | Backbone      |  APb  | APb(.5)| APb(.75)|  APm  | APm(.5)| APm(.75) |
+| :-----------: | :-----------: | :----:|:------:|:-------:| :----:|:------:|:-------: |
+| w/o GC        | R50           | 37.4  | 59.0   | 40.6    | 34.1  | 55.5   | 36.1     |
+| w/ GC         | R50           | 37.9  | 59.6   | 41.2    | 34.7  | 56.1   | 37.0     |
+| w/o GC        | R101          | 39.4  | 60.9   | 43.3    | 35.9  | 57.7   | 38.4     |
+| w/ GC         | R101          | 40.0  | 61.5   | 43.7    | 36.2  | 58.1   | 38.7     |
+| w/o GC        | X101-32x4d    | 41.1  | 62.8   | 45.0    | 37.1  | 59.4   | 39.8     |
+| w/ GC         | X101-32x4d    | 41.6  | 63.1   | 45.5    | 37.4  | 59.8   | 39.9     |
+| w/o GC        | X101-64x4d    | 42.1  | 63.8   | 46.3    | 38.0  | 60.6   | 40.9     |
+| w/ GC         | X101-64x4d    | 42.8  | 64.5   | 46.8    | 38.4  | 61.0   | 41.1     |
+| w/o GC        | R50 (4c1f)    | 37.5  | 58.2   | 41.0    | 33.9  | 55.0   | 36.1     |
+| w/ GC         | R50 (4c1f)    | 38.4  | 59.5   | 41.8    | 34.6  | 55.9   | 36.7     |
+| w/o GC        | R101GN        | 41.1  | 61.7   | 44.9    | 36.9  | 58.7   | 39.3     |
+| w/ GC         | R101GN        | 41.7  | 62.3   | 45.3    | 37.4  | 59.3   | 40.3     |
+| w/o GC        | R50GN+WS      | 40.0  | 60.7   | 43.6    | 36.1  | 57.8   | 38.6     |
+| w/ GC         | R50GN+WS      | 40.6  | 61.3   | 43.9    | 36.6  | 58.2   | 39.1     |
 
 ### Person ReId
 The codes are in `GC_code/PersonReId`.
