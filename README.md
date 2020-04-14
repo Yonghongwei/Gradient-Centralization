@@ -45,7 +45,7 @@ general image classification (Mini-ImageNet,  CIFAR100 and ImageNet) and Fine-gr
 ### General Image Classification
 * Mini-ImageNet
 
-The codes are in [`GC_code/Mini_ImageNet`](https://github.com/Yonghongwei/Gradient-Centralization/tree/master/GC_code/Mini_ImageNet). The split dataset can be downloaded from [here](https://drive.google.com/open?id=1XWRjPzwRWChNgvemqsylYM1ocpxhGtfy).
+The codes are in [`GC_code/Mini_ImageNet`](https://github.com/Yonghongwei/Gradient-Centralization/tree/master/GC_code/Mini_ImageNet). The split dataset can be downloaded from [here](https://drive.google.com/open?id=1XWRjPzwRWChNgvemqsylYM1ocpxhGtfy) (Google drive) or [here](https://pan.baidu.com/s/1Ah6Lu8OSfAVc3PZM-mPpvw) (Baidu drive, safe code: 1681).
 
 The following figure  is training loss (left) and testing accuracy (right) curves vs. training epoch on the
 Mini-ImageNet. The ResNet50 is used as the DNN model. The compared optimization
