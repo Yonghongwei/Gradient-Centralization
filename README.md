@@ -49,7 +49,7 @@ The codes is in [`GC_code/Fine-grained_classification`](https://github.com/Yongh
 <div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/fine_grid2_c.png" height="100%" width="100%" alt=""/></div>
 
 ### Objection Detection and Segmentation
-The codes is in `GC_code/MMdetection`.
+The codes is in [`MMdetection`](https://github.com/Yonghongwei/mmdetection).
 
 
 ### Person ReId
