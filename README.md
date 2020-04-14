@@ -45,6 +45,12 @@ The codes are in [`GC_code/ImageNet`](https://github.com/Yonghongwei/Gradient-Ce
 ### Fine-grained Image Classification
 The codes are in [`GC_code/Fine-grained_classification`](https://github.com/Yonghongwei/Gradient-Centralization/tree/master/GC_code/Fine-grained_classification).  The preprocessed dataset can be downloaded from [here](https://drive.google.com/open?id=1c3OnKq3EsMKK1OerWdouCG7hvN8Rv8yh).
 
+|Datesets       | FGVC Aircraft |Stanford Cars |Stanford Dogs| CUB-200-2011|
+| :-----------: | :-----------: | :----:       |:------:     |:-------:    |
+| w/o GC        | 86.62±0.31    |88.66±0.22    |76.16±0.25   |82.07±0.26   |
+| w/ GC         | 87.77±0.27    |90.03±0.26    |78.23±0.24   |83.40±0.30   |
+
+
 
 <div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/fine_grid2_c.png" height="100%" width="100%" alt=""/></div>
 
