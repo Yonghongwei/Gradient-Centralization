@@ -51,10 +51,10 @@ The codes are in [`GC_code/Fine-grained_classification`](https://github.com/Yong
 ### Objection Detection and Segmentation
 The codes are in [`MMdetection`](https://github.com/Yonghongwei/mmdetection). Please let [`SGD.py`](https://github.com/Yonghongwei/mmdetection/blob/master/tools/SGD.py) in [`MMdetection\tools\`](https://github.com/Yonghongwei/mmdetection/tree/master/tools), and update [`MMdetection\tools\train.py`](https://github.com/Yonghongwei/mmdetection/blob/master/tools/train.py). Then if you want use SGD_GC optimizer, just update optimizer in the [`configs`](https://github.com/Yonghongwei/mmdetection/blob/master/configs/) file. For example, if we want use SGD_GC to optimize Faster_RCNN with ResNet50 backbone and FPN, we update the 151th line in [`MMdetection/configs/faster_rcnn_r50_fpn_1x.py`](https://github.com/Yonghongwei/mmdetection/blob/master/configs/faster_rcnn_r50_fpn_1x.py).
 
-| Method        | Backbone      |  AP   AP(.5)  AP(.75) |
-| ------------- | ------------- |   -------------       |
-| w/o GC        | R50           |   36.4 58.4 39.1      |
-| w/ GC         | R50           |   37.0 59.0 40.2      |
+| Method        | Backbone      |  AP   | AP(.5) |  AP(.75) |
+| :-----------: | :-----------: | :----:|:------:|:-------: |
+| w/o GC        | R50           |  36.4 |  58.4  |  39.1    |
+| w/ GC         | R50           |  37.0 |  59.0  |  40.2    |
 
 ### Person ReId
 The codes are in `GC_code/PersonReId`.
