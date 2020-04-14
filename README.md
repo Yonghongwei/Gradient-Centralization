@@ -45,11 +45,7 @@ general image classification (Mini-ImageNet,  CIFAR100 and ImageNet) and Fine-gr
 ### General Image Classification
 * Mini-ImageNet
 
-The codes are in [`GC_code/Mini_ImageNet`](https://github.com/Yonghongwei/Gradient-Centralization/tree/master/GC_code/Mini_ImageNet). The split dataset can be downloaded from [here](https://drive.google.com/open?id=1XWRjPzwRWChNgvemqsylYM1ocpxhGtfy) (Google drive) or [here](https://pan.baidu.com/s/1Ah6Lu8OSfAVc3PZM-mPpvw) (Baidu drive, safe code: 1681).
-
-The following figure  is training loss (left) and testing accuracy (right) curves vs. training epoch on the
-Mini-ImageNet. The ResNet50 is used as the DNN model. The compared optimization
-techniques include BN, BN+GC, BN+WS and BN+WS+GC.
+The codes are in [`GC_code/Mini_ImageNet`](https://github.com/Yonghongwei/Gradient-Centralization/tree/master/GC_code/Mini_ImageNet). The split dataset can be downloaded from [here](https://drive.google.com/open?id=1XWRjPzwRWChNgvemqsylYM1ocpxhGtfy) (Google drive) or [here](https://pan.baidu.com/s/1Ah6Lu8OSfAVc3PZM-mPpvw) (Baidu drive, safe code: 1681). The following figure  is training loss (left) and testing accuracy (right) curves vs. training epoch on the Mini-ImageNet. The ResNet50 is used as the DNN model. The compared optimization techniques include BN, BN+GC, BN+WS and BN+WS+GC.
 
 <div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/miniIN_largeBN.png" height="60%" width="60%" alt=""/></div>
 
@@ -59,17 +55,13 @@ The codes are in [`GC_code/CIFAR100`](https://github.com/Yonghongwei/Gradient-Ce
 
 *  ImageNet
 
-The codes are in [`GC_code/ImageNet`](https://github.com/Yonghongwei/Gradient-Centralization/tree/master/GC_code/ImageNet).
-
-The following table is the Top-1 error rates on ImageNet w/o GC and w/ GC:
-<div align=center>
+The codes are in [`GC_code/ImageNet`](https://github.com/Yonghongwei/Gradient-Centralization/tree/master/GC_code/ImageNet). The following table is the Top-1 error rates on ImageNet w/o GC and w/ GC:
     
 |Backbone       |  R50BN        |R50GN         | R101BN      | R101GN      |
 | :-----------: | :-----------: | :----:       |:------:     |:-------:    |
 | w/o GC        | 23.71         |24.50         |22.37        |23.34        |
 | w/ GC         | 23.21         |23.53         |21.82        |22.14        |
 
-</div>
 The following figure  is the training error (left) and validation error (right) curves vs. training epoch on
 ImageNet. The DNN model is ResNet50 with GN.
 <div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/Imagnet_r50GN2.png" height="60%" width="60%" alt=""/></div>
@@ -78,9 +70,7 @@ ImageNet. The DNN model is ResNet50 with GN.
 ***
 
 ### Fine-grained Image Classification
-The codes are in [`GC_code/Fine-grained_classification`](https://github.com/Yonghongwei/Gradient-Centralization/tree/master/GC_code/Fine-grained_classification).  The preprocessed dataset can be downloaded from [here](https://drive.google.com/open?id=1c3OnKq3EsMKK1OerWdouCG7hvN8Rv8yh).
-
-The following table is the testing accuracies on the four fine-grained image classification datasets with ResNet50:
+The codes are in [`GC_code/Fine-grained_classification`](https://github.com/Yonghongwei/Gradient-Centralization/tree/master/GC_code/Fine-grained_classification).  The preprocessed dataset can be downloaded from [here](https://drive.google.com/open?id=1c3OnKq3EsMKK1OerWdouCG7hvN8Rv8yh). The following table is the testing accuracies on the four fine-grained image classification datasets with ResNet50:
 
 |Datesets       | FGVC Aircraft |Stanford Cars |Stanford Dogs| CUB-200-2011|
 | :-----------: | :-----------: | :----:       |:------:     |:-------:    |
