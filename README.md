@@ -39,6 +39,14 @@ The codes are in [`GC_code/CIFAR100`](https://github.com/Yonghongwei/Gradient-Ce
 #### ImageNet
 The codes are in [`GC_code/ImageNet`](https://github.com/Yonghongwei/Gradient-Centralization/tree/master/GC_code/ImageNet).
 
+The following table is the Top-1 error rates on ImageNet w/o GC and w/ GC:
+|Backbone       |  R50BN        |R50GN         | R101BN      | R101GN      |
+| :-----------: | :-----------: | :----:       |:------:     |:-------:    |
+| w/o GC        | 23.71         |24.50         |22.37        |23.34        |
+| w/ GC         | 23.21         |23.53         |21.82        |22.14        |
+
+The following figure  is the training error (left) and validation error (right) curves vs. training epoch on
+ImageNet. The DNN model is ResNet50 with GN.
 <div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/Imagnet_r50GN2.png" height="65%" width="65%" alt=""/></div>
 
 
