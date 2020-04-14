@@ -27,8 +27,8 @@ general image classification (Mini-ImageNet,  CIFAR100 and ImageNet) and Fine-gr
     }
 
 ## Experiments
-### General Image Classification
-#### Mini-ImageNet
+* General Image Classification
+    * Mini-ImageNet
 The codes are in [`GC_code/Mini_ImageNet`](https://github.com/Yonghongwei/Gradient-Centralization/tree/master/GC_code/Mini_ImageNet). The split dataset can be downloaded from [here](https://drive.google.com/open?id=1XWRjPzwRWChNgvemqsylYM1ocpxhGtfy).
 
 The following figure  is training loss (left) and testing accuracy (right) curves vs. training epoch on the
@@ -37,10 +37,10 @@ techniques include BN, BN+GC, BN+WS and BN+WS+GC.
 
 <div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/miniIN_largeBN.png" height="65%" width="65%" alt=""/></div>
 
-#### CIFAR100
+    *  CIFAR100
 The codes are in [`GC_code/CIFAR100`](https://github.com/Yonghongwei/Gradient-Centralization/tree/master/GC_code/CIFAR100).
 
-#### ImageNet
+    *  ImageNet
 The codes are in [`GC_code/ImageNet`](https://github.com/Yonghongwei/Gradient-Centralization/tree/master/GC_code/ImageNet).
 
 The following table is the Top-1 error rates on ImageNet w/o GC and w/ GC:
@@ -57,7 +57,7 @@ ImageNet. The DNN model is ResNet50 with GN.
 <div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/Imagnet_r50GN2.png" height="65%" width="65%" alt=""/></div>
 
 
-### Fine-grained Image Classification
+* Fine-grained Image Classification
 The codes are in [`GC_code/Fine-grained_classification`](https://github.com/Yonghongwei/Gradient-Centralization/tree/master/GC_code/Fine-grained_classification).  The preprocessed dataset can be downloaded from [here](https://drive.google.com/open?id=1c3OnKq3EsMKK1OerWdouCG7hvN8Rv8yh).
 
 The following table is the testing accuracies on the four fine-grained image classification datasets with ResNet50:
@@ -71,7 +71,7 @@ The following figure is the training accuracy (solid line) and testing accuracy 
 
 <div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/fine_grid2_c.png" height="100%" width="100%" alt=""/></div>
 
-### Objection Detection and Segmentation
+* Objection Detection and Segmentation
 The codes are in [`MMdetection`](https://github.com/Yonghongwei/mmdetection). Please let [`SGD.py`](https://github.com/Yonghongwei/mmdetection/blob/master/tools/SGD.py) in [`MMdetection\tools\`](https://github.com/Yonghongwei/mmdetection/tree/master/tools), and update [`MMdetection\tools\train.py`](https://github.com/Yonghongwei/mmdetection/blob/master/tools/train.py). Then if you want use SGD_GC optimizer, just update optimizer in the [`configs`](https://github.com/Yonghongwei/mmdetection/blob/master/configs/) file. For example, if we want use SGD_GC to optimize Faster_RCNN with ResNet50 backbone and FPN, we update the 151th line in [`MMdetection/configs/faster_rcnn_r50_fpn_1x.py`](https://github.com/Yonghongwei/mmdetection/blob/master/configs/faster_rcnn_r50_fpn_1x.py). The following table is the detection results on COCO by using Faster-RCNN and FPN with various backbone models:
 
 | Method        | Backbone      |  AP   | AP<sub>.5</sub> | AP<sub>.75</sub> | Backbone |  AP  | AP<sub>.5</sub> | AP<sub>.75</sub> |
@@ -100,5 +100,5 @@ The following table is the detection and segmentation results on COCO by using M
 | w/o GC        | R50GN+WS      | 40.0  | 60.7   | 43.6    | 36.1  | 57.8   | 38.6     |
 | w/ GC         | R50GN+WS      | 40.6  | 61.3   | 43.9    | 36.6  | 58.2   | 39.1     |
 
-### Person ReId
+* Person ReId
 The codes are in `GC_code/PersonReId`.
