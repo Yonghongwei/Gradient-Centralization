@@ -57,6 +57,7 @@ The codes are in [`MMdetection`](https://github.com/Yonghongwei/mmdetection). Pl
 | w/ GC         | R50           |  37.0 |  59.0  |  40.2    | X101-32x4d    |  40.7 |  62.7  |   43.9   |
 | w/o GC        | R101          |  38.5 |  60.3  |  41.6    | X101-64x4d    |  41.3 |  63.3  |   45.2   |
 | w/ GC         | R101          |  38.9 |  60.8  |  42.2    | X101-64x4d    |  41.6 |  63.8  |   45.4   |
+
 The following table is the detection and segmentation results on COCO by using Mask-RCNN and FPN with various backbone models:
 
 | Method        | Backbone      |  APb  | APb(.5)| APb(.75)|  APm  | APm(.5)| APm(.75) |
