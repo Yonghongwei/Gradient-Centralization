@@ -51,7 +51,7 @@ The codes are in [`GC_code/Fine-grained_classification`](https://github.com/Yong
 ### Objection Detection and Segmentation
 The codes are in [`MMdetection`](https://github.com/Yonghongwei/mmdetection). Please let [`SGD.py`](https://github.com/Yonghongwei/mmdetection/blob/master/tools/SGD.py) in [`MMdetection\tools\`](https://github.com/Yonghongwei/mmdetection/tree/master/tools), and update [`MMdetection\tools\train.py`](https://github.com/Yonghongwei/mmdetection/blob/master/tools/train.py). Then if you want use SGD_GC optimizer, just update optimizer in the [`configs`](https://github.com/Yonghongwei/mmdetection/blob/master/configs/) file. For example, if we want use SGD_GC to optimize Faster_RCNN with ResNet50 backbone and FPN, we update the 151th line in [`MMdetection/configs/faster_rcnn_r50_fpn_1x.py`](https://github.com/Yonghongwei/mmdetection/blob/master/configs/faster_rcnn_r50_fpn_1x.py). The following table is the detection results on COCO by using Faster-RCNN and FPN with various backbone models:
 
-| Method        | Backbone      |  AP   | AP<sub>.5</sub> |  AP<sub>.75</sub> | Backbone      |  AP   | AP(.5) |  AP(.75) |
+| Method        | Backbone      |  AP   | AP<sub>.5</sub> | AP<sub>.75</sub> | Backbone |  AP  | AP<sub>.5</sub> | AP<sub>.75</sub> |
 | :-----------: | :-----------: | :----:|:------:|:-------: | :-----------: | :----:|:------:|:-------: |
 | w/o GC        | R50           |  36.4 |  58.4  |  39.1    | X101-32x4d    |  40.1 |  62.0  |   43.8   |
 | w/ GC         | R50           |  37.0 |  59.0  |  40.2    | X101-32x4d    |  40.7 |  62.7  |   43.9   |
@@ -60,7 +60,7 @@ The codes are in [`MMdetection`](https://github.com/Yonghongwei/mmdetection). Pl
 
 The following table is the detection and segmentation results on COCO by using Mask-RCNN and FPN with various backbone models:
 
-| Method        | Backbone      |  APb  | APb(.5)| APb(.75)|  APm  | APm(.5)| APm(.75) |
+| Method        | Backbone      |  AP<sup>b</sup>  | AP<sup>b</sup><sub>.5</sub>| AP<sup>b</sup><sub>.75</sub>|  AP<sup>m</sup>   | AP<sup>m</sup><sub>.5</sub>| AP<sup>m</sup><sub>.75</sub> |
 | :-----------: | :-----------: | :----:|:------:|:-------:| :----:|:------:|:-------: |
 | w/o GC        | R50           | 37.4  | 59.0   | 40.6    | 34.1  | 55.5   | 36.1     |
 | w/ GC         | R50           | 37.9  | 59.6   | 41.2    | 34.7  | 56.1   | 37.0     |
