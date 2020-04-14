@@ -1,6 +1,9 @@
 # Gradient Centralization
 
 ## [Gradient Centralization: A New Optimization Technique for Deep Neural Networks](https://arxiv.org/abs/2004.01461)
+
+***
+
 Gradient Centralization (GC) is a simple and effective optimization technique for Deep Neural Networks (DNNs), which operates directly on gradients by centralizing the gradient vectors to have zero mean. It can both speedup training process and improve the final generalization performance of DNNs. GC is very simple to implement and can be easily embedded into existing gradient based DNN optimizers with only few lines of code. It can also be directly used to finetune the pre-trained DNNs.
 
 <div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/gradient.png" height="50%" width="50%" alt="Illustration of the GC operation on gradient matrix/tensor of weights in the fully-connected layer (left) and convolutional layer (right)."/></div>
@@ -14,9 +17,13 @@ The optimizers are provided in the files: [`SGD.py`](https://github.com/Yonghong
 from SGD import SGD_GC 
 ```
 
+***
+
 ## Update
 * 2020/04/07:Release a pytorch implementation of optimizers with GC, and provide some examples on classification task, including
 general image classification (Mini-ImageNet,  CIFAR100 and ImageNet) and Fine-grained image classification (FGVC Aircraft， Stanford Cars， Stanford  Dogs and CUB-200-2011).
+
+***
 
 ## Citation
     @article{GradientCentra,
