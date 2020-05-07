@@ -130,4 +130,4 @@ The results of Market1501 without reranking are shown in the following table:
 |  Adam*        | R101          |  87.1  | 94.5    |
 | SGD_GCC       | R101          |  87.9  |  95.0   |
 
-The results with * are reported by the authors in [reid-strong-baseline](https://github.com/michuanhaohao/reid-strong-baseline).
+The results with * are reported by the authors in [reid-strong-baseline](https://github.com/michuanhaohao/reid-strong-baseline). Our reproduced results are slight lower than the results provided by the authors.
