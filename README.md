@@ -14,7 +14,8 @@
 
 <div  align="center"><img src="https://github.com/Yonghongwei/Gradient-Centralization/blob/master/fig/projected_Grad.png" height="50%" width="50%" alt=""/></div>
 
-* The optimizers are provided in the files: [`SGD.py`](https://github.com/Yonghongwei/Gradient-Centralization/blob/master/GC_code/CIFAR100/algorithm/SGD.py), [`Adam.py`](https://github.com/Yonghongwei/Gradient-Centralization/blob/master/GC_code/CIFAR100/algorithm/Adam.py) and [`Adagrad.py`](https://github.com/Yonghongwei/Gradient-Centralization/blob/master/GC_code/CIFAR100/algorithm/Adagrad.py), including SGD_GC, SGD_GCC, SGDW_GCC, Adam_GC, Adam_GCC, AdamW_GCC and Adagrad_GCC. The optimizers with "_GC" use GC for both Conv layers and FC layers, and the optimizers with "_GCC" use GC only for Conv layers. We can use the following codes to import SGD_GC:
+* The optimizers are provided in the files: [`SGD.py`](https://github.com/Yonghongwei/Gradient-Centralization/blob/master/GC_code/CIFAR100/algorithm/SGD.py), [`Adam.py`](https://github.com/Yonghongwei/Gradient-Centralization/blob/master/GC_code/CIFAR100/algorithm/Adam.py) and [`Adagrad.py`](https://github.com/Yonghongwei/Gradient-Centralization/blob/master/GC_code/CIFAR100/algorithm/Adagrad.py), including SGD_GC, SGD_GCC, SGDW_GCC, Adam_GC, Adam_GCC, Adam_GCC2, AdamW_GCC, AdamW_GCC2  and Adagrad_GCC. The optimizers with "_GC" use GC for both Conv layers and FC layers, and the optimizers with "_GCC" use GC only for Conv layers. For adaptive learning rate method, keeping mean of weight vector unchanged usually works better. Please refer to Adam_GCC2 and AdamW_GCC2. We can use the following codes to import SGD_GC:
+
 ```python
 from SGD import SGD_GC 
 ```
