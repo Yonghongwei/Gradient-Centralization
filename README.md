@@ -120,6 +120,7 @@ learning rate 0.03 or 0.02 and weight decay 0.002. For example, you can change t
 ```python
 python3 tools/train.py --config_file='configs/softmax_triplet_with_center.yml' MODEL.DEVICE_ID "('0')" DATASETS.NAMES "('market1501')" DATASETS.ROOT_DIR "('/home/yonghw/data/reid/')" OUTPUT_DIR "('out_dir/market1501/test')" SOLVER.OPTIMIZER_NAME "('SGD_GCC')" SOLVER.BASE_LR "(0.03)" SOLVER.WEIGHT_DECAY "(0.002)" SOLVER.WEIGHT_DECAY_BIAS "(0.002)"
 ```
+The result of Market1501 is shown in the following table:
 | Method        | Backbone      |  MAP    | Top 1    |
 | :-----------: | :-----------: |:------:|:-------: |
 |  Adam*        | R18           | 77.8   |  91.7   |
