@@ -115,4 +115,4 @@ The following table is the detection and segmentation results on COCO by using M
 ***
 
 ### Person ReId
-The codes are in `GC_code/PersonReId`.
+The codes are in [`PersonReId`](https://github.com/Yonghongwei/reid-strong-baseline). Please let [`SGD.py`](https://github.com/Yonghongwei/reid-strong-baseline/tree/master/tools/SGD.py) in [`reid-strong-baseline\tools\`](https://github.com/Yonghongwei/reid-strong-baseline/tree/master/tools), and update [`reid-strong-baseline\solver\build.py`](https://github.com/Yonghongwei/reid-strong-baseline/blob/master/solver/build.py).
