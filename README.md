@@ -116,4 +116,7 @@ The following table is the detection and segmentation results on COCO by using M
 
 ### Person ReId
 The codes are in [`PersonReId`](https://github.com/Yonghongwei/reid-strong-baseline). Please let [`SGD.py`](https://github.com/Yonghongwei/reid-strong-baseline/tree/master/tools/SGD.py) in [`reid-strong-baseline\tools\`](https://github.com/Yonghongwei/reid-strong-baseline/tree/master/tools), and update [`reid-strong-baseline\solver\build.py`](https://github.com/Yonghongwei/reid-strong-baseline/blob/master/solver/build.py). For Market1501, please use SGD_GC algorithm with
-learning rate 0.03 and weight decay 0.002.
+learning rate 0.03 and weight decay 0.002. For example, you can change the '.sh' file with the following codes: 
+```python
+python3 tools/train.py --config_file='configs/softmax_triplet_with_center.yml' MODEL.DEVICE_ID "('0')" DATASETS.NAMES "('market1501')" DATASETS.ROOT_DIR "('/home/yonghw/data/reid/')" OUTPUT_DIR "('out_dir/market1501/test')" SOLVER.OPTIMIZER_NAME "('SGD_GCC')" SOLVER.BASE_LR "(0.03)" SOLVER.WEIGHT_DECAY "(0.002)" SOLVER.WEIGHT_DECAY_BIAS "(0.002)" SOLVER.EVAL_PERIOD "(5)" SOLVER.LOG_PERIOD "(40)"
+```
