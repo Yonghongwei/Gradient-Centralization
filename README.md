@@ -115,8 +115,18 @@ The following table is the detection and segmentation results on COCO by using M
 ***
 
 ### Person ReId
-The codes are in [`PersonReId`](https://github.com/Yonghongwei/reid-strong-baseline). Please let [`SGD.py`](https://github.com/Yonghongwei/reid-strong-baseline/tree/master/tools/SGD.py) in [`reid-strong-baseline\tools\`](https://github.com/Yonghongwei/reid-strong-baseline/tree/master/tools), and update [`reid-strong-baseline\solver\build.py`](https://github.com/Yonghongwei/reid-strong-baseline/blob/master/solver/build.py). For Market1501, please use SGD_GC algorithm with
-learning rate 0.03 and weight decay 0.002. For example, you can change the '.sh' file with the following codes: 
+The codes are in [`PersonReId`](https://github.com/Yonghongwei/reid-strong-baseline). Please let [`SGD.py`](https://github.com/Yonghongwei/reid-strong-baseline/tree/master/tools/SGD.py) in [`reid-strong-baseline\tools\`](https://github.com/Yonghongwei/reid-strong-baseline/tree/master/tools), and update [`reid-strong-baseline\solver\build.py`](https://github.com/Yonghongwei/reid-strong-baseline/blob/master/solver/build.py). For Market1501, please use SGD_GCC algorithm with
+learning rate 0.03 or 0.02 and weight decay 0.002. For example, you can change the '.sh' file with the following codes: 
 ```python
-python3 tools/train.py --config_file='configs/softmax_triplet_with_center.yml' MODEL.DEVICE_ID "('0')" DATASETS.NAMES "('market1501')" DATASETS.ROOT_DIR "('/home/yonghw/data/reid/')" OUTPUT_DIR "('out_dir/market1501/test')" SOLVER.OPTIMIZER_NAME "('SGD_GCC')" SOLVER.BASE_LR "(0.03)" SOLVER.WEIGHT_DECAY "(0.002)" SOLVER.WEIGHT_DECAY_BIAS "(0.002)" SOLVER.EVAL_PERIOD "(5)" SOLVER.LOG_PERIOD "(40)"
+python3 tools/train.py --config_file='configs/softmax_triplet_with_center.yml' MODEL.DEVICE_ID "('0')" DATASETS.NAMES "('market1501')" DATASETS.ROOT_DIR "('/home/yonghw/data/reid/')" OUTPUT_DIR "('out_dir/market1501/test')" SOLVER.OPTIMIZER_NAME "('SGD_GCC')" SOLVER.BASE_LR "(0.03)" SOLVER.WEIGHT_DECAY "(0.002)" SOLVER.WEIGHT_DECAY_BIAS "(0.002)"
 ```
+| Method        | Backbone      |  MAP    | Top 1    |
+| :-----------: | :-----------: |:------:|:-------: |
+|  Adam*        | R18           | 77.8   |  91.7   |
+| SGD_GCC       | R18           | 81.3   | 92.7    |
+|  Adam*        | R50           | 85.9   | 94.5    |
+| SGD_GCC       | R50           |  86.6  |  94.8   |
+|  Adam*        | R101          |  87.1  | 94.5    |
+| SGD_GCC       | R101          |  87.9  |  95.0   |
+
+
