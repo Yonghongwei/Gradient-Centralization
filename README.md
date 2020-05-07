@@ -27,6 +27,7 @@ general image classification (Mini-ImageNet,  CIFAR100 and ImageNet) and Fine-gr
 
 * 2020/04/14:Release the code of GC on MMdetection and update some tables of experimental results.
 
+* 2020/04/14:Release the code of GC on Person ReID and show some results on Market1501.
 ***
 
 ## Citation
