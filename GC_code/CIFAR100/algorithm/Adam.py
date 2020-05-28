@@ -496,7 +496,7 @@ class AdamW_GCC(Optimizer):
 
         return loss
     
-    class AdamW_GCC2(Optimizer):
+class AdamW_GCC2(Optimizer):
     """Implements Adam algorithm.
     It has been proposed in `Adam: A Method for Stochastic Optimization`_.
     Arguments:
