@@ -18,7 +18,7 @@
 ```python
 from SGD import SGD_GC 
 ```
-
+Moreover, you can reference to the [Advanced-optimizer-with-Gradient-Centralization](https://github.com/Yonghongwei/Advanced-optimizer-with-Gradient-Centralization) to obtain the codes of more optimizers.
 ***
 
 ## Update
