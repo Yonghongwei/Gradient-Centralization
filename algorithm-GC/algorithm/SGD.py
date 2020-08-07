@@ -98,6 +98,10 @@ class SGD(Optimizer):
                 d_p = p.grad
                 if weight_decay != 0:
                     d_p = d_p.add(p, alpha=weight_decay)
+                    
+                #GC operation     
+                d_p =centralized_gradient(d_p ,use_gc=group['use_gc'],gc_conv_only=group['gc_conv_only'])                 
+                                        
                 if momentum != 0:
                     param_state = self.state[p]
                     if 'momentum_buffer' not in param_state:
@@ -109,10 +113,8 @@ class SGD(Optimizer):
                         d_p = d_p.add(buf, alpha=momentum)
                     else:
                         d_p = buf
-                #GC operation 
-                G_grad= d_p       
-                G_grad=centralized_gradient(G_grad,use_gc=group['use_gc'],gc_conv_only=group['gc_conv_only'])   
+ 
                              
-                p.add_(G_grad, alpha=-group['lr'])
+                p.add_(d_p, alpha=-group['lr'])
 
         return loss
