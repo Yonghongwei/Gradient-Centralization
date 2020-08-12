@@ -36,3 +36,13 @@ optimizer = Lookahead(base_opt, k=5, alpha=0.5)
 # Ranger
 optimizer = Ranger(net.parameters(), lr=args.lr, weight_decay = args.weight_decay,use_gc=True, gc_conv_only=False,gc_loc=False)
 ```
+## References:
+* Adam: https://arxiv.org/abs/1412.6980
+
+* AdamW: https://arxiv.org/abs/1711.05101
+
+* RAdam: https://arxiv.org/abs/1908.03265, https://github.com/LiyuanLucasLiu/RAdam
+
+* Ranger: https://github.com/lessw2020/Ranger-Deep-Learning-Optimizer
+
+* Gradient Centralization: https://arxiv.org/abs/2004.01461v2
