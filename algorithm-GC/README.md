@@ -41,6 +41,8 @@ optimizer = Ranger(net.parameters(), lr=args.lr, weight_decay = args.weight_deca
 
 * AdamW: https://arxiv.org/abs/1711.05101
 
+* Lookahead: https://arxiv.org/abs/1907.08610
+
 * RAdam: https://arxiv.org/abs/1908.03265, https://github.com/LiyuanLucasLiu/RAdam
 
 * Ranger: https://github.com/lessw2020/Ranger-Deep-Learning-Optimizer
