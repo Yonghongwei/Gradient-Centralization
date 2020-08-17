@@ -22,9 +22,9 @@ from models import *
 import numpy as np
 
 #import optimizers with GC
-from algorithm.SGD import SGD_GC,SGD_GCC,SGDW,SGDW_GC,SGDW_GCC
-from algorithm.Adam import Adam_GC,Adam_GCC,AdamW,AdamW_GC,AdamW_GCC
-from algorithm.Adagrad import Adagrad_GCC,Adagrad_GC
+from algorithm.SGD import *
+from algorithm.Adam import *
+from algorithm.Adagrad import *
 
 
 parser = argparse.ArgumentParser(description='PyTorch CIFAR100 Training')
@@ -122,13 +122,23 @@ if args.alg=='adamGC':
     optimizer = Adam_GC(net.parameters(), lr=args.lr*0.01, weight_decay = WD)
 if args.alg=='adamGCC':
     optimizer = Adam_GCC(net.parameters(), lr=args.lr*0.01, weight_decay = WD)
-    
+if args.alg=='adamGC2':
+    optimizer = Adam_GC2(net.parameters(), lr=args.lr*0.01, weight_decay = WD)
+if args.alg=='adamGCC2':
+    optimizer = Adam_GCC2(net.parameters(), lr=args.lr*0.01, weight_decay = WD) 
+
+
 if args.alg=='adagrad':
     optimizer = optim.Adagrad(net.parameters(), lr=args.lr*0.1,weight_decay = WD)
 if args.alg=='adagradGC':
     optimizer = Adagrad_GC(net.parameters(), lr=args.lr*0.1,weight_decay = WD)
 if args.alg=='adagradGCC':
     optimizer = Adagrad_GCC(net.parameters(), lr=args.lr*0.1,weight_decay = WD)
+if args.alg=='adagradGC2':
+    optimizer = Adagrad_GC2(net.parameters(), lr=args.lr*0.1,weight_decay = WD)
+if args.alg=='adagradGCC2':
+    optimizer = Adagrad_GCC2(net.parameters(), lr=args.lr*0.1,weight_decay = WD)
+    
     
 if args.alg=='sgdW':
     optimizer = SGDW(net.parameters(), lr=args.lr, momentum=0.9,weight_decay = WD)
@@ -143,6 +153,11 @@ if args.alg=='adamWGC':
     optimizer = Adam_GC(net.parameters(), lr=args.lr*0.01, weight_decay = WD)
 if args.alg=='adamWGCC':
     optimizer = Adam_GCC(net.parameters(), lr=args.lr*0.01, weight_decay = WD)
+if args.alg=='adamWGC2':
+    optimizer = Adam_GC2(net.parameters(), lr=args.lr*0.01, weight_decay = WD)
+if args.alg=='adamWGCC2':
+    optimizer = Adam_GCC2(net.parameters(), lr=args.lr*0.01, weight_decay = WD)
+    
     
 exp_lr_scheduler = lr_scheduler.StepLR(optimizer, step_size=60, gamma=0.1)
 
