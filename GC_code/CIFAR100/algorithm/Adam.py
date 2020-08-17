@@ -757,11 +757,6 @@ class AdamW_GCC2(Optimizer):
                     max_exp_avg_sq = state['max_exp_avg_sq']
                 beta1, beta2 = group['betas']
 
-                #GC operation for Conv layers
-                if len(list(grad.size()))>3:     
-                   weight_mean=p.data.mean(dim = tuple(range(1,len(list(grad.size())))), keepdim = True)
-                   grad.add_(-grad.mean(dim = tuple(range(1,len(list(grad.size())))), keepdim = True))
-
                 state['step'] += 1
 
                 # if group['weight_decay'] != 0:
@@ -867,11 +862,6 @@ class AdamW_GC2(Optimizer):
                 if amsgrad:
                     max_exp_avg_sq = state['max_exp_avg_sq']
                 beta1, beta2 = group['betas']
-
-                #GC operation for Conv layers
-                if len(list(grad.size()))>3:     
-                   weight_mean=p.data.mean(dim = tuple(range(1,len(list(grad.size())))), keepdim = True)
-                   grad.add_(-grad.mean(dim = tuple(range(1,len(list(grad.size())))), keepdim = True))
 
                 state['step'] += 1
 
