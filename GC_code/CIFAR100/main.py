@@ -22,9 +22,9 @@ from models import *
 import numpy as np
 
 #import optimizers with GC
-from algorithm.SGD import SGD_GCC,SGDW,SGDW_GCC
-from algorithm.Adam import Adam_GCC,AdamW,AdamW_GCC
-from algorithm.Adagrad import Adagrad_GCC
+from algorithm.SGD import SGD_GC,SGD_GCC,SGDW,SGDW_GC,SGDW_GCC
+from algorithm.Adam import Adam_GC,Adam_GCC,AdamW,AdamW_GC,AdamW_GCC
+from algorithm.Adagrad import Adagrad_GCC,Adagrad_GC
 
 
 parser = argparse.ArgumentParser(description='PyTorch CIFAR100 Training')
@@ -112,28 +112,38 @@ print('==> choose optimizer..')
 if args.alg=='sgd':
     optimizer = optim.SGD(net.parameters(), lr=args.lr, momentum=0.9,weight_decay = WD)
 if args.alg=='sgdGC':
+    optimizer = SGD_GC(net.parameters(), lr=args.lr, momentum=0.9,weight_decay = WD)
+if args.alg=='sgdGCC':
     optimizer = SGD_GCC(net.parameters(), lr=args.lr, momentum=0.9,weight_decay = WD)
-
+    
 if args.alg=='adam':
     optimizer = optim.Adam(net.parameters(), lr=args.lr*0.01, weight_decay = WD)
 if args.alg=='adamGC':
+    optimizer = Adam_GC(net.parameters(), lr=args.lr*0.01, weight_decay = WD)
+if args.alg=='adamGCC':
     optimizer = Adam_GCC(net.parameters(), lr=args.lr*0.01, weight_decay = WD)
-
+    
 if args.alg=='adagrad':
     optimizer = optim.Adagrad(net.parameters(), lr=args.lr*0.1,weight_decay = WD)
 if args.alg=='adagradGC':
+    optimizer = Adagrad_GC(net.parameters(), lr=args.lr*0.1,weight_decay = WD)
+if args.alg=='adagradGCC':
     optimizer = Adagrad_GCC(net.parameters(), lr=args.lr*0.1,weight_decay = WD)
-
+    
 if args.alg=='sgdW':
     optimizer = SGDW(net.parameters(), lr=args.lr, momentum=0.9,weight_decay = WD)
 if args.alg=='sgdWGC':
+    optimizer = SGDW_GC(net.parameters(), lr=args.lr, momentum=0.9,weight_decay = WD)
+if args.alg=='sgdWGCC':
     optimizer = SGDW_GCC(net.parameters(), lr=args.lr, momentum=0.9,weight_decay = WD)
-
+    
 if args.alg=='adamW':
     optimizer = AdamW(net.parameters(), lr=args.lr*0.01, weight_decay = WD)
 if args.alg=='adamWGC':
+    optimizer = Adam_GC(net.parameters(), lr=args.lr*0.01, weight_decay = WD)
+if args.alg=='adamWGCC':
     optimizer = Adam_GCC(net.parameters(), lr=args.lr*0.01, weight_decay = WD)
-
+    
 exp_lr_scheduler = lr_scheduler.StepLR(optimizer, step_size=60, gamma=0.1)
 
 # Training
