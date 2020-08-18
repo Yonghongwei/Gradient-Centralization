@@ -36,7 +36,7 @@ general image classification (Mini-ImageNet,  CIFAR100 and ImageNet) and Fine-gr
     @article{GradientCentra,
       title={Gradient-Centralization: A New Optimization Technique for Deep Neural Networks},
       author={Hongwei Yong and Jianqiang Huang and Xiansheng Hua and Lei Zhang},
-      journal={Arxiv},
+      booktitle={the European Conference on Conputer Vision},
       year={2020}
     }
 
